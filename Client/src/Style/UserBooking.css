@@ -1,0 +1,469 @@
+/* General layout */
+.user-booking-layout {
+  display: flex;
+}
+
+.my-bookings-container {
+  flex: 1;
+  /* Takes the remaining space */
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar styles (optional for alignment) */
+.sidebar {
+  width: 250px;
+  /* Fixed width for the sidebar */
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Booking grid */
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two cards per row */
+  gap: 20px;
+}
+
+/* Booking card styles */
+.booking-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+}
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.reviews {
+  font-size: 14px;
+  color: #888;
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.booking-details {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.message {
+  background: #e7f3ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.status {
+  background: #e0f7fa;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.action-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background: #0056b3;
+}
+
+
+.booking-header-text {
+  display: flex;
+  /* Use flexbox for alignment */
+  justify-content: space-between;
+  /* Push the icon to the right */
+  align-items: center;
+  /* Vertically align items */
+  gap: 350px;
+  /* Add some gap between text and icon */
+}
+
+.booking-header-text h3 {
+  margin: 0;
+  /* Remove default margin for the heading */
+  font-size: 18px;
+  /* Adjust font size as needed */
+}
+
+.booking-header-text svg {
+  font-size: 20px;
+  /* Adjust icon size as needed */
+  color: #888;
+  /* Optional: Set icon color */
+  cursor: pointer;
+  /* Optional: Add a pointer cursor on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Booking grid */
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+}
+
+/* Booking card styles */
+.booking-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  transition: transform 0.2s;
+  /* Add hover effect */
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  /* Slight lift on hover */
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .booking-header {
+    flex-direction: column;
+    /* Stack the profile pic and text */
+    align-items: flex-start;
+    /* Align items to the start */
+    gap: 10px;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .booking-header-text {
+    gap: 10px;
+    /* Reduce gap on smaller screens */
+  }
+
+  .booking-header-text h3 {
+    font-size: 16px;
+    /* Adjust font size */
+  }
+
+  .price {
+    font-size: 14px;
+    /* Smaller price text on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .my-bookings-container {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .tabs button {
+    padding: 8px 15px;
+    /* Smaller padding for tabs */
+    font-size: 14px;
+    /* Adjust font size */
+  }
+
+  .booking-card {
+    padding: 15px;
+    /* Reduce card padding */
+  }
+
+  .action-button {
+    padding: 8px 12px;
+    /* Adjust button size */
+    font-size: 14px;
+    /* Adjust font size */
+  }
+}
+
+/* Adjusting the header text and icon layout */
+.booking-header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.booking-header-text h3 {
+  margin: 0;
+  font-size: 18px;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.booking-header-text svg {
+  font-size: 20px;
+  /* Adjust icon size */
+  color: #007bff;
+  /* Optional: Set icon color */
+  cursor: pointer;
+  /* Add pointer cursor on hover */
+  flex-shrink: 0;
+  /* Prevent icon from shrinking */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .booking-header-text {
+    flex-direction: row;
+    /* Ensure row layout on smaller screens */
+    justify-content: space-between;
+    /* Maintain spacing */
+    gap: 5px;
+    /* Adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .booking-header-text {
+    flex-direction: row;
+    /* Stack elements properly on very small screens */
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .booking-header-text h3 {
+    font-size: 16px;
+    /* Slightly smaller text */
+  }
+
+  .booking-header-text svg {
+    font-size: 18px;
+    /* Slightly smaller icon */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Popup container */
+.rate-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Modal content */
+.modal-rate {
+  background: #fff;
+  width: 50%; /* Default width */
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* Close button */
+.close-rate {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Advocate image */
+.advocate-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+/* Star rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star.filled {
+  color: #ffd700; /* Gold color for filled stars */
+}
+
+.star {
+  font-size: 24px; /* Adjust size as needed */
+  color: #ccc; /* Default color for empty stars */
+  cursor: pointer;
+  transition: color 0.2s; /* Smooth transition */
+}
+
+.star.filled,
+.star:hover,
+.star:hover ~ .star {
+  color: #ffd700; /* Gold color for filled stars */
+}
+
+.star:hover ~ .star {
+  color: #ccc; /* Reset stars after the hovered one */
+}
+
+
+/* Review input */
+.review-input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Submit button */
+.rate-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rate-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .modal-rate {
+      width: 80%; /* Adjust modal width for smaller screens */
+      padding: 15px;
+  }
+
+  .star {
+      font-size: 20px; /* Adjust star size for smaller screens */
+  }
+
+  .review-input {
+      font-size: 12px; /* Smaller font size */
+  }
+
+  .submit-button {
+      padding: 8px 15px; /* Smaller button */
+      font-size: 14px; /* Smaller text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .aria-modal {
+      width: 90%; /* Further reduce modal width */
+      padding: 10px;
+  }
+
+  .close-button {
+      top: 5px;
+      right: 5px;
+      font-size: 18px; /* Smaller close button */
+  }
+
+  .star {
+      font-size: 18px; /* Reduce star size further */
+  }
+}

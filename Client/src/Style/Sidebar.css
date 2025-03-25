@@ -1,0 +1,95 @@
+/* Sidebar styles */
+.usersidebar {
+    width: 250px;
+    height: 100vh;
+    background: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Hidden by default */
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.usersidebar.open {
+    left: 0;
+    /* Slide in when open */
+}
+
+/* App container */
+.app-container {
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 0;
+}
+
+.usersidebar.open~.app-container {
+    margin-left: 0;
+    /* No margin on smaller screens */
+}
+
+@media (min-width: 768px) {
+    .usersidebar {
+        margin-top: 10%;
+        left: 0;
+        position: static;
+        /* Sidebar always visible in desktop view */
+        height: auto;
+        transform: none;
+        /* No animation needed in desktop view */
+        width: 250px;
+    }
+
+    .app-container {
+        margin-left: 25px;
+        margin-right: 25px;
+        /* Adjust for sidebar in desktop view */
+    }
+}
+
+
+/* Burger menu styles */
+.burger-menu {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 10px;
+    /* Adjust as needed */
+    left: 10px;
+    z-index: 1100;
+}
+
+.burger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.burger-icon svg {
+    fill: #fff;
+}
+
+/* Show burger menu only in mobile view */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        /* Visible in mobile view */
+    }
+
+    .usersidebar {
+        transform: translateX(-100%);
+        /* Hide sidebar initially */
+    }
+
+    .usersidebar.open {
+        transform: translateX(0);
+        padding-top: 10%;
+        /* Slide in sidebar */
+    }
+
+    .app-container {
+        margin-left: 0;
+        /* No margin adjustment for mobile */
+    }
+}

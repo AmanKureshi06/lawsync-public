@@ -1,0 +1,154 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 100px);
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-content:hover {
+    background-color: #f0f0f0;
+}
+
+/* Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.admin-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.admin-card .admin-h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.admin-card:hover .admin-h3 {
+    color: #007bff;
+}
+
+.admin-card .admin-p {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+/* Recent Activity Table */
+.recent-activity .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.recent-activity .admin-th,
+.recent-activity .admin-td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activity .admin-th {
+    background-color: #09193c;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.recent-activity .admin-tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Charts and Notifications */
+.charts-and-notifications {
+    margin-top: 20px;
+}
+
+.charts-and-notifications h2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 1.5em;
+    color: #333;
+}
+
+.chart-placeholder, .notifications {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.admin-h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.admin-p, .admin-ul {
+    color: #333;
+}
+
+.admin-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-and-notifications {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-card {
+        padding: 15px;
+    }
+
+    .notifications .admin-li {
+        font-size: 0.9em;
+    }
+}
+

@@ -1,0 +1,7 @@
+.get-started {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+  }
+
+  .get-started:hover {
+    background-color: #0056b3; /* Replace with your desired hover color */
+  }

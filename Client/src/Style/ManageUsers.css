@@ -1,0 +1,72 @@
+/* Main Container */
+.manage-users-container {
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+/* Card */
+.manage-users-card {
+    border-radius: 8px;
+    margin: 0 auto; /* Center the card */
+    max-width: 100%; /* Ensure the card width does not exceed the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrollbars within the card */
+}
+
+/* Table */
+.manage-users-table {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent table content from wrapping */
+}
+
+.manage-users-header h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Buttons */
+.manage-users-ban-btn,
+.manage-users-remove-btn {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+/* Modal */
+.manage-users-modal-content {
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .manage-users-container {
+        padding: 10px;
+        overflow-x: hidden; /* Ensure no scrollbars appear */
+    }
+
+    .manage-users-card {
+        margin: 0 auto;
+        padding: 10px; /* Adjust padding for smaller screens */
+        box-shadow: none; /* Optional: Simplify card appearance for mobile */
+    }
+
+    .manage-users-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .manage-users-table {
+        font-size: 0.8rem;
+        display: block; /* Ensures table is treated as a block element */
+        overflow-x: auto; /* Adds horizontal scrolling for small screens */
+        white-space: nowrap; /* Prevents breaking of table rows */
+    }
+
+    .manage-users-ban-btn,
+    .manage-users-remove-btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    .manage-users-textarea {
+        font-size: 0.9rem;
+    }
+}

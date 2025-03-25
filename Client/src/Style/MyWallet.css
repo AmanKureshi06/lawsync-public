@@ -1,0 +1,99 @@
+
+@media (max-width: 992px) {
+    .button-add {
+        margin-top: 2%;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .button-add {
+        margin-top: 3%;
+    }
+}
+
+
+
+
+
+
+
+
+.my-wallet-page {
+    /* Base font size for responsive scaling */
+    font-size: 16px; /* Default base font size */
+}
+
+@media (max-width: 1200px) {
+    .my-wallet-page {
+        font-size: 15px; /* Reduce font size slightly for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .my-wallet-page {
+        font-size: 14px; /* Further reduction for medium-sized screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .my-wallet-page {
+        font-size: 13px; /* Smaller base font for tablet screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .my-wallet-page {
+        font-size: 12px; /* Smallest font size for mobile screens */
+    }
+}
+
+.my-wallet-page h3, 
+.my-wallet-page h5 {
+    font-size: 1.5rem; /* Responsive based on base font size */
+}
+
+.my-wallet-page h2 {
+    margin-bottom: 1rem;
+}
+
+.my-wallet-page p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.my-wallet-page .button-add {
+    font-size: 1rem; /* Adjust button text size */
+    padding: 0.5rem 1rem; /* Add some padding for touchscreens */
+}
+
+.my-wallet-page button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.my-wallet-page .list-group-item p, 
+.my-wallet-page .list-group-item strong {
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .my-wallet-page h2, 
+    .my-wallet-page h3, 
+    .my-wallet-page h5 {
+        font-size: 1.2rem; /* Scale down headings */
+    }
+
+    .my-wallet-page p, 
+    .my-wallet-page .list-group-item p, 
+    .my-wallet-page .list-group-item strong {
+        font-size: 0.9rem; /* Reduce paragraph text size */
+    }
+
+    .my-wallet-page button, 
+    .my-wallet-page .button-add {
+        font-size: 0.8rem;
+    }
+}

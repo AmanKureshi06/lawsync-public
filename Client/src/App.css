@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+
+/* Scrollbar */
+
+body {
+    --sb-track-color: #dcdcdc;
+    --sb-thumb-color: #000;
+    --sb-size: 4px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.nav-link {
+    font-size: 13px;
+}
+
+.Nav-Home {
+    background: #09193c;
+}
+
+/* section 2 */
+
+.section2 {
+    background-color: #fafafa;
+}
+
+.section2 .sec2 div {
+    background: #e8f5ff;
+    padding: 30px 50px;
+    transition: 0.3s;
+}
+
+.section2 .sec2 div:hover {
+    background-color: #006ebd;
+    transition: 0.3s;
+    color: white !important;
+    box-shadow: 10px 10px 20px rgba(36, 50, 36, 0.5);
+}
+
+.section2 .sec2 div:hover p {
+    color: white !important;
+    /* Ensures the text color changes */
+}
+
+.section2 .sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.section2 .sec2 div {
+    width: 15%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+
+    /* border: .5px solid !important; */
+    height: auto;
+    /* color: #fff; */
+    user-select: none;
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.fa-comment {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-size: 20px !important;
+}
+
+.card-list .card-item .user-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    /* border: 3px solid #fff; */
+    /* padding: 4px; */
+}
+
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    /* color: #e3e3e3; */
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    /* color: #fff; */
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    /* background: #fff; */
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-slide {
+    border: 2px solid red;
+}
+
+.slider-wrapper .swiper-slide-button {
+    /* color: #fff; */
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+
+.swiper-slide i {
+    font-size: 8px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide span {
+    font-size: 10px;
+}
+
+.Arlene-p {
+    font-size: 10px;
+}
+
+/* works start */
+
+.Works {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Works .Workschild1 {
+    width: 30%;
+}
+
+.Workschild1 {
+    background: rgba(211, 211, 211, 0.141);
+}
+
+.Works p {
+    font-size: 12px;
+    color: gray;
+}
+
+/* section 5 start */
+
+.section6 {
+    background: rgba(173, 216, 230, 0.246);
+}
+
+/* footer start */
+
+
+footer p {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+footer button {
+    /* width: 75%; */
+    font-size: 10px;
+}
+
+footer i {
+    background: rgba(128, 128, 128, 0.183);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+footer i:hover {
+    color: #fff;
+    background-color: #030728;
+}
+
+
+/*  */
+
+.login-img1 {
+    height: 100vh;
+    position: relative;
+}
+
+.login-img1 .login-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.login-imgchild {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.login-imgchild img {
+    width: 100px;
+    height: 60px;
+}
+
+
+.form-outline {
+    position: relative;
+}
+
+.form-outline .fa-envelope,
+.fa-lock {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.form-outline .fa-eye {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.form-outline input {
+    padding-left: 40px;
+}
+
+.account {
+    font-size: 12px;
+}
+
+/*  */
+
+.fun {
+    margin: 0px auto;
+    background: url("../public/Image/Login\ 1.png");
+    height: 700px;
+    width: 70%;
+    background-size: cover;
+
+}
+
+/* Media  */
+
+
+
+@media (max-width:1400px) {
+    .section2 .sec2 div {
+        width: 30%;
+    }
+}
+
+
+@media (max-width:900px) {
+    .section2 .sec2 div {
+        width: 45%;
+    }
+
+    .Works .Workschild1 {
+        width: 90%;
+    }
+
+}
+
+/* Login */
+.text-decoration {
+    text-decoration: none;
+}
+
+/* Font Weights */
+
+.custom-font {
+    font-family: 'Poppins', serif;
+}
+
+.font-weight-200 {
+    font-weight: 200;
+    /* Regular font weight */
+}
+
+.font-weight-300 {
+    font-weight: 300;
+    /* Regular font weight */
+}
+
+.font-weight-400 {
+    font-weight: 400;
+    /* Bold font weight */
+}
+
+.font-weight-500 {
+    font-weight: 500;
+    /* Custom font weight for the 'trust' word */
+}
+
+.font-weight-600 {
+    font-weight: 600;
+    /* Custom font weight for the 'trust' word */
+}
+
+.linear-color div {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    height: 700px;
+    width: 100%;
+}
+
+
+/* src/styles.css */
+.btn-custom {
+    background-color: #e0f2ff !important;
+    color: #0d6efd !important;
+    border-color: #e0f2ff;
+    /* Optional: to remove the border if present */
+    transition: 0.3s;
+}
+
+.btn-custom i {
+    color: #0d6efd !important;
+}
+
+.icon-group i {
+    transition: 0.3s;
+}
+
+
+
+
+
+/* Extra */
+
+
+
+
+
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+
+.slider-wrapper .swiper-pagination-bullet {
+    /* background: #fff; */
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-slide {
+    border: 2px solid red;
+}
+
+.slider-wrapper .swiper-slide-button {
+    /* color: #fff; */
+    margin-top: -55px;
+    transition: 0.2s ease;
+}
+
+.swiper-slide i {
+    font-size: 8px;
+}
+
+.swiper-slide span {
+    font-size: 10px;
+}
+
+.Arlene-p {
+    font-size: 10px;
+}
+
+
+/* LegalAdvice */
+
+
+.sizing {
+    font-size: 10px;
+}
+
+.LegalAdvice2button button {
+    font-size: 20px;
+}
+
+.LegalAdvice2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* margin: 20px 0px; */
+}
+
+.LegalAdvice2 .LegalAdvice2child {
+    width: 32%;
+    transition: 1s;
+}
+
+.LegalAdvice2child:hover {
+    border: 1px solid blue !important;
+    box-shadow: 10px 10px 20px;
+}
+
+.LegalAdvice2 div {
+    position: relative;
+}
+
+.fa-comment {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(0, 0, 255, 0.572);
+}
+
+@media (max-width:900px) {
+    .Availableimage2 .Availableimage2chiuld {
+        width: 100%;
+    }
+
+}
+
+.slick-arrow {
+    /* color: red !important; */
+    background-color: red !important;
+}
+
+.slick-arrow:hover {
+    /* color: #030728 !important; */
+    background-color: blue !important;
+}
+
+
+
+/* Register */
+
+.form-outline {
+    position: relative;
+}
+
+.form-outline .fa-envelope,
+.fa-lock,
+.form-icon,
+.fa-mobile-screen-button {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.form-outline .fa-eye {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.form-outline input {
+    padding-left: 40px;
+}
+
+.account {
+    font-size: 12px;
+}
+
+
+
+@media (max-width:600px) {
+    .mobile-none {
+        display: none;
+    }
+
+    .login-p {
+        margin-top: 7%;
+    }
+
+    .login-h {
+        margin-bottom: 10%;
+        margin-top: 0% !important;
+    }
+
+    .login-form {
+        padding-top: 7%;
+    }
+
+    .back-link {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    .register-p {
+        margin-top: 3%;
+        margin-bottom: 03%;
+    }
+}
+
+@media (min-width:600px) {
+    .login-p {
+        margin-top: 7%;
+    }
+
+    .login-h {
+        margin-bottom: 10%;
+        margin-top: 0% !important;
+    }
+
+    .login-form {
+        padding-top: 7%;
+    }
+
+    .back-link {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (min-width:768px) {
+    .login-p {
+        margin-top: 7%;
+    }
+
+    .login-h {
+        margin-bottom: 10%;
+        margin-top: 0% !important;
+    }
+
+    .login-form {
+        padding-top: 7%;
+    }
+
+    .back-link {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (min-width:992px) {
+
+    .login-p {
+        margin-top: 7%;
+    }
+
+    .login-h {
+        margin-bottom: 10%;
+        margin-top: 0% !important;
+    }
+
+    .login-form {
+        padding-top: 7%;
+    }
+
+    .back-link {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (min-width:1200px) {
+    .login-form {
+        padding: 0;
+    }
+}
+
+
+
+
+/* Available Advocates */
+
+/* Available */
+
+
+.Availableimage {
+    background: url("../public/Image/available-header.png");
+    width: 100%;
+    background-size: cover;
+}
+
+.Availableimage p {
+    font-size: 12px;
+}
+
+.Availableimage2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0px;
+}
+
+.Availableimage2 .Availableimage2chiuld {
+    width: 23%;
+    text-align: center;
+    transition: 1s;
+}
+
+.Availableimage2chiuld:hover {
+    border: 1px solid blue !important;
+    box-shadow: 10px 10px 20px red;
+}
+
+
+.Availableimage2 i,
+span {
+    font-size: 10px;
+}
+
+.Availableimage2 p {
+    font-size: 10px;
+    text-align: start;
+}
+
+.Availableimage2 div {
+    position: relative;
+}
+
+.fa-comment {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: blue;
+}
+
+
+.star1JacobAbout {
+    font-size: 8px;
+
+}
+
+
+/* Legal Advice */
+
+/* LegalAdvice */
+
+.LegalAdvice {
+    background: url("https://bbdu.ac.in/wp-content/uploads/2020/05/banner-background-5.jpg");
+    width: 100%;
+    background-size: cover;
+}
+
+.LegalAdvice2 i,
+b,
+p {
+    font-size: 10px;
+}
+
+.LegalAdvice2button button {
+    font-size: 10px;
+}
+
+.LegalAdvice2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* margin: 20px 0px; */
+}
+
+.LegalAdvice2 .LegalAdvice2child {
+    width: 32%;
+    transition: 1s;
+}
+
+.LegalAdvice2child:hover {
+    border: 1px solid blue !important;
+    box-shadow: 10px 10px 20px;
+}
+
+.LegalAdvice2 div {
+    position: relative;
+}
+
+.fa-comment {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(0, 0, 255, 0.572);
+}
+
+
+@media (max-width:1400px) {
+
+    .LegalAdvice2 .LegalAdvice2child {
+        width: 45%;
+    }
+
+}
+
+
+@media (max-width:900px) {
+
+    .LegalAdvice2 .LegalAdvice2child {
+        width: 90%;
+    }
+
+}
+
+
+.lEGALCHILD {
+    visibility: hidden;
+    background-color: white;
+
+}
+
+.lEGALMAIN {
+    color: black;
+}
+
+.lEGALMAIN:hover .lEGALCHILD {
+    visibility: visible;
+}
+
+
+.lEGALCHILDnext {
+    visibility: hidden;
+    background-color: white;
+
+}
+
+.lEGALMAINnext:hover .lEGALCHILDnext {
+    visibility: visible;
+
+}
+
+.lEGALMAIN:hover {
+    background-color: blue !important;
+    background-color: white;
+
+}
+
+.lEGALMAINnext:hover {
+    background-color: blue !important;
+    background-color: white;
+
+}
+
+.lEGALCHILDnext div:hover {
+    background-color: blue !important;
+    color: white;
+}
+
+.text-info {
+    font-size: 100%;
+}

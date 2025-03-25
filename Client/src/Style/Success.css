@@ -1,0 +1,47 @@
+/* General page styles */
+.success-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* White background as shown in the image */
+  }
+  
+  .success-content {
+    text-align: center;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #000; /* Black heading text */
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: 16px;
+    color: #666; /* Gray text for the description */
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  .ok-button {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ok-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

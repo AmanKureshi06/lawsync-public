@@ -1,0 +1,191 @@
+/* General Styles */
+
+.terms-body {
+    font-family: 'Poppins', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.terms-overflow-hidden {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f0f4f8, #e2ebf8);
+}
+
+/* Container for the Terms page */
+.terms-privacy {
+    padding: 20px;
+    margin: 0 50px;
+    /* Add left and right margin for spacing */
+}
+
+/* Typography */
+.terms-heading-main {
+    color: #343a40;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.terms-heading-secondary {
+    color: #343a40;
+    font-size: 1.875rem;
+    font-weight: 600;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.terms-subheading {
+    color: #343a40;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.terms-sub-subheading {
+    color: #343a40;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.subheading-p{
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+}
+
+.terms-paragraph {
+    color: #495057;
+    line-height: 1.8;
+    margin-top: 24px;
+}
+
+.terms-list {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.terms-list-item {
+    margin-top: 8px;
+}
+
+.terms-link-terms {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-link-terms:hover {
+    text-decoration: underline;
+}
+
+/* List Styles */
+.terms-list-terms {
+    padding-left: 40px;
+    margin-top: 12px;
+    list-style-type: disc;
+}
+
+.terms-list-item {
+    margin-top: 8px;
+    color: #495057;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Responsive List Styling */
+@media (max-width: 768px) {
+    .terms-list-item {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-list-item {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Responsive Typography */
+@media (min-width: 1024px) {
+    .terms-heading-main {
+        font-size: 3rem;
+    }
+}
+
+/* Blockquote Styles */
+.terms-blockquote {
+    font-style: italic;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Responsive Design for Different Screen Sizes */
+@media (max-width: 1024px) {
+    .terms-privacy {
+        margin: 0 20px;
+        /* Adjust margin for tablets and smaller screens */
+    }
+
+    .terms-heading-main {
+        font-size: 2.2rem;
+    }
+
+    .terms-heading-secondary {
+        font-size: 1.6rem;
+    }
+
+    .terms-paragraph,
+    .terms-list-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .terms-privacy {
+        margin: 0 10px;
+        /* Even smaller margin for mobile screens */
+    }
+
+    .terms-heading-main {
+        font-size: 1.8rem;
+    }
+
+    .terms-heading-secondary {
+        font-size: 1.4rem;
+    }
+
+    .terms-paragraph,
+    .terms-list-item {
+        font-size: 0.95rem;
+    }
+
+    .terms-blockquote {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-privacy {
+        margin: 0 5px;
+        /* Tightest margin for smaller mobile screens */
+    }
+
+    .terms-heading-main {
+        font-size: 1.6rem;
+    }
+
+    .terms-heading-secondary {
+        font-size: 1.3rem;
+    }
+
+    .terms-paragraph,
+    .terms-list-item {
+        font-size: 0.9rem;
+    }
+
+    .terms-blockquote {
+        font-size: 0.8rem;
+    }
+}

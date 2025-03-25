@@ -1,0 +1,96 @@
+/* General settings container adjustments for responsiveness */
+.settings-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+}
+
+/* Notification toggle container */
+.notification-toggle {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if space is insufficient */
+  gap: 10px; /* Add space between items */
+}
+
+/* Individual toggle items */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1; /* Allow items to grow equally */
+  min-width: 150px; /* Ensure buttons have a minimum width */
+}
+
+/* Adjust container layout for smaller screens */
+@media (max-width: 768px) {
+  .settings-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .notification-toggle {
+    flex-wrap: wrap; /* Ensure buttons can wrap on smaller screens */
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .toggle-item {
+    flex-direction: row; /* Keep items in a row */
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* General settings container adjustments for responsiveness */
+.settings-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+}
+
+/* Notification toggle container */
+.notification-toggle {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if space is insufficient */
+  gap: 10px; /* Add space between items */
+}
+
+/* Individual toggle items */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1; /* Allow items to grow equally */
+  min-width: 150px; /* Ensure buttons have a minimum width */
+}
+
+/* Adjust container layout for smaller screens */
+@media (max-width: 768px) {
+  .settings-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .notification-toggle {
+    flex-wrap: wrap; /* Ensure buttons can wrap on smaller screens */
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .toggle-item {
+    flex-direction: row; /* Keep items in a row */
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+/* Sidebar layout adjustments */
+@media (max-width: 768px) {
+  .settings-container {
+    margin: 0 auto;
+  }
+}
