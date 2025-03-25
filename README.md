@@ -43,6 +43,6 @@ ENCRYPTION_KEY=f84d4cbbe3abd5d9de18b8b5362e857d96e275801e590edb0a3dc5425e32f3cc
 
 The `.env` file should be placed inside the **'Server'** folder of the project.  
 
-**Note:** Change the `MONGO_URI` value according to your MongoDB connection string.  
+**Note:** If you want to change the database connection then change the `MONGO_URI` value according to your MongoDB connection string.  
 
 ---
