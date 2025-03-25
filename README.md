@@ -5,8 +5,12 @@
 ### Steps to start the project:
 
 **Clone Repository or Download the ZIP file of the project**
+
 To Clone the project:
 `git clone https://github.com/AmanKureshi06/lawsync-public.git`
+
+Clone the project using command:  
+`git clone https://github.com/AmanKureshi06/lawsync-public.git`  
 
 **Step 1:**  
 Open the terminal and open the 'Client' folder using the command:  
